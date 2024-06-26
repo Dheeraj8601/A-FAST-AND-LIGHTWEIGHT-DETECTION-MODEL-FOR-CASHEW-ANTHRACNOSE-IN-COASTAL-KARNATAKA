@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashew Anthracnose</title>
+    <style>
+        .bdy {
+            background-color: #652730;
+            color: white;
+        }
+
+        .border-custom {
+            border: 2px solid #851f08;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bdy">
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+            <div class="container-fluid bg-black d-flex justify-content-between">
+                <div>
+                    <span class="navbar-text text-white text-left">
+                        <h1><strong>About</strong></h1>
+                    </span>
+                </div>
+                <div class="text-right">
+                    <button id="languageToggle" class="btn btn-primary">ಕನ್ನಡ</button>
+                </div>
+            </div>
+        </nav>
+        
+        
+
+        <div class="border-4 m-2 border-custom">
+            <div class="text-capitalize text-center">
+                <h1><strong id="title">Cashew Anthracnose</strong></h1>
+            </div>
+            <div>
+                <div class="container mt-5" id="content">
+                    <p>Cashew anthracnose is a significant fungal disease that affects cashew trees (<em>Anacardium
+                            occidentale</em>), primarily caused by the <em>Colletotrichum gloeosporioides</em> species
+                        complex. Here are some key points about cashew anthracnose:</p>
+
+                    <h3 class="mt-4">Symptoms</h3>
+                    <ul>
+                        <li><strong>Leaves:</strong> Dark, water-soaked lesions that turn brown or black and may
+                            coalesce to form large necrotic areas. Severely affected leaves may drop prematurely.</li>
+                        <li><strong>Twigs and Stems:</strong> Lesions can girdle stems, causing dieback.</li>
+                        <li><strong>Flowers and Fruits:</strong> Infected flowers may turn black and fall off, leading
+                            to reduced fruit set. On fruits, sunken, dark lesions can develop, often with pinkish spore
+                            masses under humid conditions. This can result in fruit rot and significant yield loss.</li>
+                    </ul>
+
+                    <h3 class="mt-4">Pathogen</h3>
+                    <p><strong><em>Colletotrichum gloeosporioides</em></strong>: This fungus thrives in warm, humid
+                        environments, which are typical in many cashew-growing regions. It produces conidia (spores)
+                        that spread via rain splash, wind, insects, and contaminated tools.</p>
+
+                    <h3 class="mt-4">Disease Cycle</h3>
+                    <ol>
+                        <li><strong>Overwintering:</strong> The fungus survives on plant debris, alternate hosts, and
+                            infected plant parts.</li>
+                        <li><strong>Infection:</strong> Conidia are produced and disseminated to new growth during
+                            favorable conditions (high humidity and temperatures between 20-30°C).</li>
+                        <li><strong>Colonization:</strong> The fungus penetrates plant tissues, establishing infection
+                            and causing lesions.</li>
+                        <li><strong>Reproduction:</strong> The fungus continues to produce conidia on infected tissues,
+                            spreading the disease.</li>
+                    </ol>
+
+                    <h3 class="mt-4">Management</h3>
+                    <ul>
+                        <li><strong>Cultural Practices:</strong>
+                            <ul>
+                                <li>Prune and destroy infected plant parts to reduce inoculum sources.</li>
+                                <li>Ensure good air circulation within the canopy to reduce humidity.</li>
+                                <li>Avoid overhead irrigation to minimize leaf wetness.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Chemical Control:</strong> Fungicides, such as copper-based compounds and systemic
+                            fungicides like azoxystrobin or difenoconazole, can be effective. Regular application is
+                            often necessary, especially during wet periods.</li>
+                        <li><strong>Biological Control:</strong> Use of antagonistic fungi (e.g., <em>Trichoderma
+                                spp.</em>) and bacteria (e.g., <em>Bacillus spp.</em>) to suppress the pathogen.</li>
+                        <li><strong>Resistant Varieties:</strong> Planting cashew varieties that show resistance or
+                            tolerance to anthracnose can be an effective long-term strategy.</li>
+                    </ul>
+
+                    <h3 class="mt-4">Economic Impact</h3>
+                    <p>Cashew anthracnose can cause severe yield losses, especially in areas with conducive
+                        environmental conditions. The impact is particularly significant during the flowering and
+                        fruiting stages, leading to reduced nut quality and quantity.</p>
+
+                    <h3 class="mt-4">Monitoring and Early Detection</h3>
+                    <p>Regular monitoring of cashew orchards for early signs of anthracnose is crucial. Early detection
+                        allows for timely management interventions, which can help minimize the spread and impact of the
+                        disease.</p>
+
+                    <p class="mt-4">By integrating cultural, chemical, biological, and genetic strategies, it is
+                        possible to manage cashew anthracnose effectively and sustain healthy cashew production.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const englishContent = `
+            <p>Cashew anthracnose is a significant fungal disease that affects cashew trees (<em>Anacardium occidentale</em>), primarily caused by the <em>Colletotrichum gloeosporioides</em> species complex. Here are some key points about cashew anthracnose:</p>
+                    
+            <h3 class="mt-4">Symptoms</h3>
+            <ul>
+                <li><strong>Leaves:</strong> Dark, water-soaked lesions that turn brown or black and may coalesce to form large necrotic areas. Severely affected leaves may drop prematurely.</li>
+                <li><strong>Twigs and Stems:</strong> Lesions can girdle stems, causing dieback.</li>
+                <li><strong>Flowers and Fruits:</strong> Infected flowers may turn black and fall off, leading to reduced fruit set. On fruits, sunken, dark lesions can develop, often with pinkish spore masses under humid conditions. This can result in fruit rot and significant yield loss.</li>
+            </ul>
+            
+            <h3 class="mt-4">Pathogen</h3>
+            <p><strong><em>Colletotrichum gloeosporioides</em></strong>: This fungus thrives in warm, humid environments, which are typical in many cashew-growing regions. It produces conidia (spores) that spread via rain splash, wind, insects, and contaminated tools.</p>
+            
+            <h3 class="mt-4">Disease Cycle</h3>
+            <ol>
+                <li><strong>Overwintering:</strong> The fungus survives on plant debris, alternate hosts, and infected plant parts.</li>
+                <li><strong>Infection:</strong> Conidia are produced and disseminated to new growth during favorable conditions (high humidity and temperatures between 20-30°C).</li>
+                <li><strong>Colonization:</strong> The fungus penetrates plant tissues, establishing infection and causing lesions.</li>
+                <li><strong>Reproduction:</strong> The fungus continues to produce conidia on infected tissues, spreading the disease.</li>
+            </ol>
+            
+            <h3 class="mt-4">Management</h3>
+            <ul>
+                <li><strong>Cultural Practices:</strong>
+                    <ul>
+                        <li>Prune and destroy infected plant parts to reduce inoculum sources.</li>
+                        <li>Ensure good air circulation within the canopy to reduce humidity.</li>
+                        <li>Avoid overhead irrigation to minimize leaf wetness.</li>
+                    </ul>
+                </li>
+                <li><strong>Chemical Control:</strong> Fungicides, such as copper-based compounds and systemic fungicides like azoxystrobin or difenoconazole, can be effective. Regular application is often necessary, especially during wet periods.</li>
+                <li><strong>Biological Control:</strong> Use of antagonistic fungi (e.g., <em>Trichoderma spp.</em>) and bacteria (e.g., <em>Bacillus spp.</em>) to suppress the pathogen.</li>
+                <li><strong>Resistant Varieties:</strong> Planting cashew varieties that show resistance or tolerance to anthracnose can be an effective long-term strategy.</li>
+            </ul>
+            
+            <h3 class="mt-4">Economic Impact</h3>
+            <p>Cashew anthracnose can cause severe yield losses, especially in areas with conducive environmental conditions. The impact is particularly significant during the flowering and fruiting stages, leading to reduced nut quality and quantity.</p>
+            
+            <h3 class="mt-4">Monitoring and Early Detection</h3>
+            <p>Regular monitoring of cashew orchards for early signs of anthracnose is crucial. Early detection allows for timely management interventions, which can help minimize the spread and impact of the disease.</p>
+            
+            <p class="mt-4">By integrating cultural, chemical, biological, and genetic strategies, it is possible to manage cashew anthracnose effectively and sustain healthy cashew production.</p>
+        `;
+
+        const kannadaContent = `
+            <p>ಕಾಜೂ ಆಂಥ್ರಾಕ್ನೋಸ್ ಮುಖ್ಯವಾದ ಶಿಲೀಂಧ್ರ ರೋಗವಾಗಿದೆ, ಇದು ಕಾಜೂ ಮರಗಳಿಗೆ (<em>ಅನಕಾರ್ಡಿಯಮ್ ಅಕ್ಸಿಡೆಂಟೇಲ್</em>) ಪರಿಣಾಮ ಬೀರುತ್ತದೆ, ಮುಖ್ಯವಾಗಿ <em>ಕೊಲೆಟೋಟ್ರಿಚಮ್ ಗ್ಲೊಯೋಸ್ಪೋರಾಯ್ಡಿಸ್</em> ಪ್ರಜಾತಿ ಸಂಕೀರ್ಣದಿಂದ ಉಂಟಾಗುತ್ತದೆ. ಕಾಜೂ ಆಂಥ್ರಾಕ್ನೋಸ್ ಬಗ್ಗೆ ಕೆಲವು ಮುಖ್ಯಾಂಶಗಳು ಇಲ್ಲಿವೆ:</p>
+                    
+            <h3 class="mt-4">ಲಕ್ಷಣಗಳು</h3>
+<ul>
+    <li><strong>ಎಲೆಗಳು:</strong> ಕಪ್ಪು ಅಥವಾ ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗುವ ಕಪ್ಪು, ನೀರು ಹಾಲಿರುವ ಗಾಯಗಳು ಮತ್ತು ದೊಡ್ಡ ನರ ಹಾನಿಯ ಭಾಗಗಳನ್ನು ರಚಿಸಬಹುದು. ಗಂಭೀರವಾಗಿ ಹಾನಿಗೊಳಗಾದ ಎಲೆಗಳು ಮುಂಚಿನೆಲ್ಲೂ ಬಿದ್ದುಹೋಗಬಹುದು.</li>
+    <li><strong>ತಂತಿಗಳು ಮತ್ತು ಕಾಂಡಗಳು:</strong> ಗಾಯಗಳು ಕಾಂಡಗಳನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಸುತ್ತಲೂ ಅಂಟಿಕೊಳ್ಳಬಹುದು, ಅದರಿಂದ ವಿಸರ್ಜನೆಯನ್ನು ಕಡಿಮೆಗೈಯಬಹುದು.</li>
+    <li><strong>ಹೂವುಗಳು ಮತ್ತು ಹಣ್ಣುಗಳು:</strong> ಹಾನಿಗೊಳಗಾದ ಹೂವುಗಳು ಕಪ್ಪಾಗುತ್ತವೆ ಮತ್ತು ಬಿದ್ದುಹೋಗುತ್ತವೆ, ಹಣ್ಣುಗಳ ಮೇಲೆ ಕಪ್ಪು ಗಾಯಗಳು ಮತ್ತು ಸ್ಪೋರೊ ಮ್ಯಾಸಸ್ ತೇವದ ಪರಿಸ್ಥಿತಿಗಳಲ್ಲಿ ಉಂಟಾಗಬಹುದು, ಹಾಗೆಯೇ ಹಣ್ಣುಗಳು ಹಾಳಾಗಬಹುದು ಮತ್ತು ಉಳಿತಾಯ ಕಡಿಮೆಯಾಗಬಹುದು.</li>
+</ul>
+
+            
+            <h3 class="mt-4">ರೋಗಕೀಟ</h3>
+            <p><strong><em>ಕೊಲೆಟೋಟ್ರಿಚಮ್ ಗ್ಲೊಯೋಸ್ಪೋರಾಯ್ಡಿಸ್</em></strong>: ಈ ಶಿಲೀಂಧ್ರವು ಬಿಸಿ, ತೇವದ ಪರಿಸರಗಳಲ್ಲಿ, ಅದು ಹಲವಾರು ಕಾಜೂ ಬೆಳೆದ ಪ್ರದೇಶಗಳಲ್ಲಿ ಸಹಜವಾಗಿರುತ್ತದೆ. ಇದು ರೇನ್ ಸ್ಪ್ಲಾಶ್, ಗಾಳಿ, ಕೀಟಗಳು, ಮತ್ತು ಸಂಕ್ರಾಮಿತ ಉಪಕರಣಗಳ ಮೂಲಕ ಹರಡುವ ಕೊನಿಡಿಯ (ಸ್ಪೋರೊ) ಉತ್ಪತ್ತಿ ಮಾಡುತ್ತದೆ.</p>
+            
+            <h3 class="mt-4">ರೋಗ ಚಕ್ರ</h3>
+<ol>
+    <li><strong>ಅವರಡಿಸಲು:</strong> ಶಿಲೀಂಧ್ರವು ಸಸ್ಯ ಅವಶೇಷ, ಪರ್ಯಾಯ ಹೋಸ್ಟ್ಗಳು, ಮತ್ತು ಹಾನಿಗೊಳಗಾದ ಸಸ್ಯ ಭಾಗಗಳ ಮೇಲೆ ತಾಳುತ್ತದೆ.</li>
+    <li><strong>ಸಂಕ್ರಮಣ:</strong> ಕೊನಿಡಿಯವು ತಾತ್ಕಾಲಿಕ ಪರಿಸ್ಥಿತಿಗಳಲ್ಲಿ (ಉತ್ತಮ ತೇವದ ಮತ್ತು 20-30°C ತಾಪಮಾನಗಳು) ಹೊಸ ಬೆಳವಣಿಗೆಯನ್ನು ಹರಡುತ್ತದೆ.</li>
+    <li><strong>ಕಾಲೊನೈಸೇಶನ್:</strong> ಶಿಲೀಂಧ್ರವು ಸಸ್ಯ ಒತ್ತುವಿಕೆಯೊಳಗೆ ಪ್ರವೇಶಿಸುತ್ತದೆ, ಹಾನಿಗೊಳಗಾದ ಹಣ್ಣುಗಳ ಮೇಲೆ ಕೊನಿಡಿಯ ಉತ್ಪತ್ತಿ ಮಾಡುತ್ತದೆ.</li>
+    <li><strong>ಪುನರ್ದಾಳಣೆ:</strong> ಶಿಲೀಂಧ್ರವು ಹಾನಿಗೊಳಗಾದ ಹಣ್ಣುಗಳ ಮೇಲೆ ಕೊನಿಡಿಯ ಉತ್ಪತ್ತಿ ಮಾಡುತ್ತದೆ.</li>
+</ol>
+
+            
+            <h3 class="mt-4">ನಿರ್ವಹಣೆ</h3>
+            <ul>
+                <li><strong>ಸಾಂಸ್ಕೃತಿಕ ಅಭ್ಯಾಸಗಳು:</strong>
+                    <ul>
+                        <li>ಸಂಕುಚಿತ ಮೂಲಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಹಾನಿಗೊಳಗಾದ ಸಸ್ಯ ಭಾಗಗಳನ್ನು ಕತ್ತರಿಸಿ ನಾಶಮಾಡಿ.</li>
+                        <li>ತಾಪಮಾನವನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಕುಪ್ಪಳೆಯಲ್ಲಿ ಉತ್ತಮ ಗಾಳಿಯುಂಟುಮಾಡಿ.</li>
+                        <li>ಎಲೆಗಳ ತೇವವನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಮೇಲಿನಿಂದ ನೀರುಪೂರಿಸುವುದನ್ನು ತಪ್ಪಿಸಿ.</li>
+                    </ul>
+                </li>
+                <li><strong>ರಾಸಾಯನಿಕ ನಿಯಂತ್ರಣ:</strong> ಕಬ್ಬಿಣದ ಸಂಯುಕ್ತಗಳು ಮತ್ತು ಆಹಾರಕ್ರಮಬದ್ಧ ಶಿಲೀಂಧ್ರನಾಶಕಗಳು ಕೂಡ ಪರಿಣಾಮಕಾರಿ. ನಿಯಮಿತ ಅನುಷ್ಠಾನವು ಸಾಮಾನ್ಯವಾಗಿ ಅಗತ್ಯವಿರುತ್ತದೆ, ವಿಶೇಷವಾಗಿ ಬರುವ ನೀರಿನಿಂದ ಉಪರಿಸ್ಥಿತಿ.</li>
+
+                <li><strong>ಜೈವ ನಿಯಂತ್ರಣ:</strong> ಶಿಲೀಂಧ್ರವನ್ನು ದಮನಿಸಲು ಪ್ರತಿದ್ವಂಧ್ವ ಶಿಲೀಂಧ್ರಗಳ (ಉದಾ., <em>ಟ್ರೈಚೋಡರ್ಮಾ spp.</em>) ಮತ್ತು ಬ್ಯಾಕ್ಟೀರಿಯಾ (ಉದಾ., <em>ಬ್ಯಾಸಿಲಸ್ spp.</em>) ಬಳಕೆ.</li>
+                <li><strong>ಪ್ರತಿರೋಧಕ ತಳಿಗಳು:</strong> ಆಂಥ್ರಾಕ್ನೋಸ್ ಗೆ ಪ್ರತಿರೋಧದ ತಳಿಗಳನ್ನು ಬೆಳೆಸುವುದು ದೀರ್ಘಕಾಲದ ಸಮರ್ಥತೆಯ ತಂತ್ರವಾಗಬಹುದು.</li>
+            </ul>
+            
+            <h3 class="mt-4">ಆರ್ಥಿಕ ಪರಿಣಾಮ</h3>
+<p>ಕಾಜೂ ಆಂಥ್ರಾಕ್ನೋಸ್ ತೀವ್ರವಾದ ಉಳಿತಾಯವನ್ನು ಉಂಟುಮಾಡಬಹುದು، ಪರಿಣಾಮವು ವಿಶೇಷವಾಗಿ ಹೂವು ಮತ್ತು ಹಣ್ಣುಗಳ ಹಂತಗಳಲ್ಲಿ ಉಂಟಾಗುತ್ತದೆ ಮತ್ತು ಕಾಜೂ ಉತ್ಪಾದನೆಯ ಮಾತ್ರೆಯನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ.</p>
+
+<h3 class="mt-4">ನಿಗಾವಳಿ ಮತ್ತು ಮುಂಚಿನ ಹುಡುಕಾಟ</h3>
+<p>ಆಂಥ್ರಾಕ್ನೋಸ್ ನ ಮುಂಚಿನ ಸೂಚನೆಗಳನ್ನು ಹುಡುಕಲು ಕಾಜೂ ತೋಟಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಪರಿಶೀಲಿಸುವುದು ಅಗತ್ಯ.</p>
+
+<p class="mt-4">ಸಾಂಸ್ಕೃತಿಕ, ರಾಸಾಯನಿಕ, ಜೈವಿಕ, ಮತ್ತು ಜನ್ಯತೆಯ ತಂತ್ರಜ್ಞಾನಗಳನ್ನು ಅಳವಡಿಸುವ ಮೂಲಕ ಕಾಜೂ ಆಂಥ್ರಾಕ್ನೋಸ್ ನಿರ್ವಹಣೆಯನ್ನು ಹೆಚ್ಚುವರಿಯಾಗಿ ಮಾಡಬಹುದು ಮತ್ತು ಕಾಜೂ ಆಂಥ್ರಾಕ್ನೋಸ್ ನೆಲೆಗೊಳಿಸಿದ ವಾತಾವರಣದಲ್ಲಿ ಕಾಜೂ ಉತ್ಪಾದನೆಯನ್ನು ಪಾಲಿಸಿಕೊಳ್ಳಲು ಸಹಾಯಕವಾಗಬಹುದು.</p>
+
+        `;
+
+        $("#languageToggle").on("click", function () {
+            const currentText = $(this).text();
+            if (currentText === "ಕನ್ನಡ") {
+                $("#title").text("ಕಾಜೂ ಆಂಥ್ರಾಕ್ನೋಸ್");
+                $("#content").html(kannadaContent);
+                $(this).text("English");
+            } else {
+                $("#title").text("Cashew Anthracnose");
+                $("#content").html(englishContent);
+                $(this).text("ಕನ್ನಡ");
+            }
+        });
+    </script>
+</body>
+
+</html>
